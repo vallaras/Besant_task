@@ -1,0 +1,11 @@
+from encapsulation import *
+a=square(49)
+print(a)
+n1=int(input("enter the num1"))
+n2=int(input("enter the num2"))
+c=square(n1)
+d=cube(n2)
+e=add(n1,n2)
+print(c)
+print(d)
+print(e)

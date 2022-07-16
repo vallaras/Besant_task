@@ -1,0 +1,45 @@
+from tkinter import *
+root=Tk()
+menu=Menu(root)
+root.title('note pad')
+root.geometry('400x600')
+root.config(menu=menu)
+filemenu=Menu(menu)
+menu.add_cascade(label='file',menu=filemenu)
+filemenu.add_command(label='new')
+editmenu=Menu(menu)
+menu.add_cascade(label='edit',menu=editmenu)
+filemenu.add_command(label='open')
+formatmenu=Menu(menu)
+menu.add_cascade(label='format',menu=formatmenu)
+filemenu.add_command(label='save')
+viewmenu=Menu(menu)
+menu.add_cascade(label='view',menu=viewmenu)
+filemenu.add_command(label='save as')
+helpmenu=Menu(menu)
+menu.add_cascade(label='help',menu=helpmenu)
+filemenu.add_command(label='page setup')
+filemenu.add_command(label='print')
+filemenu.add_command(label='exit')
+editmenu.add_command(label='undo')
+editmenu.add_command(label='cut')
+editmenu.add_command(label='copy')
+editmenu.add_command(label='paste')
+editmenu.add_command(label='delete')
+editmenu.add_command(label='search with bing')
+editmenu.add_command(label='find')
+editmenu.add_command(label='find next')
+editmenu.add_command(label='replace')
+editmenu.add_command(label='Go to')
+editmenu.add_command(label='select all')
+editmenu.add_command(label='time/date')
+formatmenu.add_command(label='world warp')
+formatmenu.add_command(label='font')
+
+
+
+
+
+
+
+root.mainloop()
